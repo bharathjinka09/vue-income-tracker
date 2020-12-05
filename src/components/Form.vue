@@ -1,10 +1,18 @@
 <template>
+<div class="container">
+
   <form @submit.prevent="formHandler">
-      <input type="text" placeholder="Description" v-model="formData.desc"/>
-      <input type="number" placeholder="Amount" v-model="formData.value"/>
-      <input type="date" placeholder="Date" v-model="formData.date"/>
-      <input type="submit" value="Submit" />
+      <br>
+      <input class="form-control" type="text" placeholder="Description" v-model="formData.desc"/>
+      <br>
+      <input class="form-control" type="number" placeholder="Amount" v-model="formData.value"/>
+      <br>
+      <input class="form-control" type="date" placeholder="Date" v-model="formData.date"/>
+      <br>
+      
+      <input class="btn btn-info" type="submit" value="Submit" />
   </form>
+</div>
 </template>
 
 <script>
@@ -47,7 +55,7 @@ export default {
 </script>
 
 <style scoped>
-  form {
+  /* form {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -85,5 +93,5 @@ export default {
   }
   form input:last-of-type {
     border-radius: 0px 8px 8px 0px;
-  }
+  } */
 </style>
